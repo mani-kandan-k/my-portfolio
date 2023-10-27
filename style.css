@@ -1,0 +1,206 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap");
+
+:root {
+  /* font-size: 16px; */
+
+  --dark1: #00132d;
+  --dark2: #00193b;
+  --dark3: #001e45;
+
+  --light1: #002657;
+  --light2: #002d67;
+  --light3: #00377e;
+
+  /* --background: linear-gradient(to bottom, red, yellow); */
+  /* --background: linear-gradient(
+    to bottom,
+    var(--dark1),
+    var(--dark2),
+    var(--dark3),
+    var(--dark3),
+    var(--dark2)
+  ); */
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: "Playfair Display", serif;
+}
+
+/******************* nav-block ************************/
+nav {
+  height: 10vh;
+  width: 100%;
+  /* background-color: var(--light1); */
+}
+
+#nav-block {
+  height: inherit;
+  margin: 0px auto;
+  width: 85%;
+  /* top: 1px; */
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav1 {
+  font-size: 1.5rem;
+
+  display: flex;
+  flex-basis: 30%;
+  justify-content: flex-start;
+  align-items: baseline;
+  gap: 10%;
+}
+.nav2 {
+  font-size: 1.1rem;
+  display: flex;
+  flex-basis: 70%;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 5%;
+  border: 0px solid #fff;
+}
+
+.nav2 a:hover {
+  color: #00377e;
+}
+
+.icons,
+.nav1 {
+  color: #000;
+  /* color: #fff; */
+}
+
+/*********************** home-block *********************/
+#home {
+  height: 90vh;
+  width: 100%;
+  background-image: url("https://images.unsplash.com/photo-1521780171415-783b1cb576e7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1528&q=80");
+  background-position: center top;
+  /* background-size: cover; */
+}
+
+#home section {
+  height: inherit;
+  margin: 0px auto;
+  width: 85%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+#home section article {
+}
+
+#home section article h1 {
+  font-size: 5em;
+  word-spacing: 0.2em;
+  letter-spacing: 5px;
+  /* color: #fff; */
+}
+
+#home section p {
+  font-size: 1.5em;
+}
+
+#home section article {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 1.5em;
+}
+#home section article i {
+  /* margin-top: 1.5em; */
+  font-size: 5em;
+}
+
+/************************* skills **************************/
+
+#skills {
+  height: 100vh;
+  width: 100%;
+  /* background: linear-gradient(to bottom, #a770ef, #cf8bf3, #fdb99b); */
+}
+
+#skills .skill-container {
+  height: inherit;
+  width: 85%;
+  margin: 0px auto;
+
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-areas:
+    "html css js boot"
+    "java py sql sass";
+  gap: 1em;
+  padding: 1em;
+
+  /* background-color: aqua; */
+}
+
+#skills .skill-container .grid {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 2em;
+  /* outline: 2px solid black; */
+  /* outline-offset: -30px; */
+  /* border: 2px solid black; */
+  /* box-shadow: 2px 2px 3px 2px black; */
+  /* background-color: #00377e; */
+}
+
+#skills .skill-container .grid i {
+  font-size: 4em;
+  margin-bottom: 0.25em;
+}
+#skills .skill-container .grid h5 {
+  font-size: 1.2em;
+}
+
+/* projects */
+#project {
+  height: 100vh;
+  width: 100%;
+}
+
+#project #project-container {
+  width: 85%;
+  height: inherit;
+  margin: 0px auto;
+  background-color: lightcoral;
+
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-areas:
+    "portfolio bank"
+    "web-scrap web-automation";
+}
+
+#project #project-container .project1,
+div {
+}
+
+#project p,
+#project h1,
+#project div {
+  background-color: lightseagreen;
+}
+#project h1 {
+  /* background-color: lightseagreen; */
+}
+#project div {
+  /* background-color: lightseagreen; */
+}
